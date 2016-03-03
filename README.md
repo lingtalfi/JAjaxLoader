@@ -24,6 +24,8 @@ $('#target').ajaxloader("stop"); // stop the loader
 
 ```
 
+Be sure that your target element is css positioned (not static).
+That's because the ajaxloader plugin will inject some absolute positioned overlay and the loader inside the target.
 
 
 The classical example
