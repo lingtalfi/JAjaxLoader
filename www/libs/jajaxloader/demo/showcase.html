@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
+	<script src="/libs/jajaxloader/js/jajaxloader.js"></script>
+	<link rel="stylesheet" href="/libs/jajaxloader/css/jajaxloader.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/css/lukehaas/vertical_bars.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/css/lukehaas/circle_on_path.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/css/lukehaas/tear_ball.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/css/vulchivijay/rosace.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/css/cssload/thecube.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/css/cssload/colordots.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/css/cssload/flipping_square.css">
+
+	<title>Html page</title>
+	<style>
+		.gray {
+			background: rgba(100, 100, 100, 0.3);
+			position: relative;
+		}
+	</style>
+</head>
+
+<body>
+
+
+<div id="target" class="gray">
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
+		dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
+		necessitatibus!
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
+		dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
+		necessitatibus!
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
+		dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
+		necessitatibus!
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
+		dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
+		necessitatibus!
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
+		dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
+		necessitatibus!
+	</p>
+</div>
+
+
+<button id="loader1">Vulchivijay rosace</button>
+<button id="loader2">Haas vertical bars</button>
+<button id="loader3">Haas circle on path</button>
+<button id="loader4">Haas tear ball</button>
+<button id="loader5">Cssload thecube</button>
+<button id="loader6">Cssload colordots</button>
+<button id="loader7">Cssload flipping square</button>
+
+
+<button id="stop">Stop</button>
+<button id="resume">Resume</button>
+
+
+<script>
+	$(document).ready(function () {
+
+
+		var jTarget = $('#target');
+
+
+		function setHandler(id, cssClass, content) {
+			if ('undefined' === typeof content) {
+				content = '';
+			}
+			$('#' + id).on('click', function () {
+				jTarget.ajaxloader({
+					cssClass: cssClass,
+					content: content,
+				});
+			});
+		}
+
+		setHandler('loader1', 'vulchivijay_rosace', '<div class="spinnerBlock"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>');
+		setHandler('loader2', 'lukehaas_vertical_bars');
+		setHandler('loader3', 'lukehaas_circle_on_path');
+		setHandler('loader4', 'lukehaas_tear_ball');
+		setHandler('loader5', 'cssload_thecube', '<div class="cssload-cube cssload-c1"></div><div class="cssload-cube cssload-c2"></div><div class="cssload-cube cssload-c4"></div><div class="cssload-cube cssload-c3"></div>');
+		setHandler('loader6', 'cssload_colordots', '<div class="cssload-dots" style="filter: url(#goo);"><div class="cssload-dot"></div><div class="cssload-dot"></div><div class="cssload-dot"></div><div class="cssload-dot"></div><div class="cssload-dot"></div></div><svg version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><filter id="goo"><feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix><!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>--></filter></defs></svg>');
+		setHandler('loader7', 'cssload_flipping_square', '<div class="cssload-flipper"><div class="cssload-front"></div><div class="cssload-back"></div></div>');
+
+
+
+
+		$('#resume').on('click', function () {
+			jTarget.ajaxloader();
+		});
+
+		$('#stop').on('click', function () {
+			jTarget.ajaxloader("stop");
+		});
+
+
+	});
+</script>
+
+</body>
+</html>

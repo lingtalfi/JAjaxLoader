@@ -1,0 +1,105 @@
+/*--------------------------------------------------------------------------*
+// http://codepen.io/vulchivijay/pen/gPxrvb
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*
+Html:
+	<div class="loader">
+		<div class="spinnerBlock">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+/*--------------------------------------------------------------------------*/
+
+
+.vulchivijay_rosace * {
+    margin: 0;
+    padding: 0;
+}
+.vulchivijay_rosace *,
+.vulchivijay_rosace *:after,
+.vulchivijay_rosace *:before {
+    box-sizing: border-box;
+}
+
+
+.vulchivijay_rosace .loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.vulchivijay_rosace .loader .spinnerBlock {
+    -webkit-animation: rotate 600ms linear infinite;
+    animation: rotate 600ms linear infinite;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+.vulchivijay_rosace .loader span {
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.vulchivijay_rosace .loader span:nth-child(1) {
+    border-color: #eee;
+}
+.vulchivijay_rosace .loader span:nth-child(2) {
+    left: -18px;
+    top: 10px;
+}
+.vulchivijay_rosace .loader span:nth-child(3) {
+    left: -18px;
+    top: -10px;
+}
+.vulchivijay_rosace .loader span:nth-child(4) {
+    left: 0;
+    top: -18px;
+}
+.vulchivijay_rosace .loader span:nth-child(5) {
+    left: 18px;
+    top: -10px;
+}
+.vulchivijay_rosace .loader span:nth-child(6) {
+    left: 18px;
+    top: 10px;
+}
+.vulchivijay_rosace .loader span:nth-child(7) {
+    left: 0;
+    top: 18px;
+}
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
