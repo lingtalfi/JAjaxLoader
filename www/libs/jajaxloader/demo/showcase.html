@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="/libs/jajaxloader/css/cssload/thecube.css">
 	<link rel="stylesheet" href="/libs/jajaxloader/css/cssload/colordots.css">
 	<link rel="stylesheet" href="/libs/jajaxloader/css/cssload/flipping_square.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/css/cssload/spinning_square.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/css/cssload/zenith.css">
 
 	<title>Html page</title>
 	<style>
@@ -63,6 +65,8 @@
 <button id="loader5">Cssload thecube</button>
 <button id="loader6">Cssload colordots</button>
 <button id="loader7">Cssload flipping square</button>
+<button id="loader8">Cssload spinning square</button>
+<button id="loader9">Cssload zenith</button>
 
 
 <button id="stop">Stop</button>
@@ -95,6 +99,8 @@
 		setHandler('loader5', 'cssload_thecube', '<div class="cssload-cube cssload-c1"></div><div class="cssload-cube cssload-c2"></div><div class="cssload-cube cssload-c4"></div><div class="cssload-cube cssload-c3"></div>');
 		setHandler('loader6', 'cssload_colordots', '<div class="cssload-dots" style="filter: url(#goo);"><div class="cssload-dot"></div><div class="cssload-dot"></div><div class="cssload-dot"></div><div class="cssload-dot"></div><div class="cssload-dot"></div></div><svg version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><filter id="goo"><feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix><!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>--></filter></defs></svg>');
 		setHandler('loader7', 'cssload_flipping_square', '<div class="cssload-flipper"><div class="cssload-front"></div><div class="cssload-back"></div></div>');
+		setHandler('loader8', 'cssload_spinning_square');
+		setHandler('loader9', 'cssload_zenith', '<div class="cssload-zenith"></div>');
 
 
 

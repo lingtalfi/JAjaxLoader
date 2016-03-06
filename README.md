@@ -211,6 +211,10 @@ See the [demo directory](https://github.com/lingtalfi/JAjaxLoader/blob/master/ww
 History Log
 ------------------
     
+- 1.1.0 -- 2016-03-06
+
+    - add spinning_square, zenith css transitions
+    
 - 1.0.0 -- 2016-03-03
 
     - initial commit

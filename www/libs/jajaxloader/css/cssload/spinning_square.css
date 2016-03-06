@@ -1,0 +1,150 @@
+.cssload_spinning_square .loader {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    background: rgb(0,255,255);
+    display:block;
+    margin: auto;
+    animation: 1.15s cssload-spin infinite;
+    -o-animation: 1.15s cssload-spin infinite;
+    -ms-animation: 1.15s cssload-spin infinite;
+    -webkit-animation: 1.15s cssload-spin infinite;
+    -moz-animation: 1.15s cssload-spin infinite;
+}
+.cssload_spinning_square .loader::before, .cssload_spinning_square .loader::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: 0.58s infinite alternate linear
+}
+.cssload_spinning_square .loader::before {
+    background: rgb(255,0,255);
+    -o-animation: 0.58s infinite alternate linear
+}
+.cssload_spinning_square .loader::before {
+    background: rgb(255,0,255);
+    -ms-animation: 0.58s infinite alternate linear
+}
+.cssload_spinning_square .loader::before {
+    background: rgb(255,0,255);
+    -webkit-animation: 0.58s infinite alternate linear
+}
+.cssload_spinning_square .loader::before {
+    background: rgb(255,0,255);
+    -moz-animation: 0.58s infinite alternate linear
+}
+.cssload_spinning_square .loader::before {
+    background: rgb(255,0,255);
+    animation-name: cssload-blur1;
+    -o-animation-name: cssload-blur1;
+    -ms-animation-name: cssload-blur1;
+    -webkit-animation-name: cssload-blur1;
+    -moz-animation-name: cssload-blur1;
+}
+.cssload_spinning_square .loader::after {
+    background: rgb(255,255,255);
+    animation-name: cssload-blur2;
+    -o-animation-name: cssload-blur2;
+    -ms-animation-name: cssload-blur2;
+    -webkit-animation-name: cssload-blur2;
+    -moz-animation-name: cssload-blur2;
+}
+
+
+
+
+
+
+
+@keyframes cssload-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes cssload-spin {
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes cssload-spin {
+    to {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes cssload-spin {
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@keyframes cssload-blur1 {
+    to {
+        transform: rotate(-30deg);
+    }
+}
+
+@-o-keyframes cssload-blur1 {
+    to {
+        -o-transform: rotate(-30deg);
+    }
+}
+
+@-ms-keyframes cssload-blur1 {
+    to {
+        -ms-transform: rotate(-30deg);
+    }
+}
+
+@-webkit-keyframes cssload-blur1 {
+    to {
+        -webkit-transform: rotate(-30deg);
+    }
+}
+
+@-moz-keyframes cssload-blur1 {
+    to {
+        -moz-transform: rotate(-30deg);
+    }
+}
+
+@keyframes cssload-blur2 {
+    to {
+        transform: rotate(-15deg);
+    }
+}
+
+@-o-keyframes cssload-blur2 {
+    to {
+        -o-transform: rotate(-15deg);
+    }
+}
+
+@-ms-keyframes cssload-blur2 {
+    to {
+        -ms-transform: rotate(-15deg);
+    }
+}
+
+@-webkit-keyframes cssload-blur2 {
+    to {
+        -webkit-transform: rotate(-15deg);
+    }
+}
+
+@-moz-keyframes cssload-blur2 {
+    to {
+        -moz-transform: rotate(-15deg);
+    }
+}
