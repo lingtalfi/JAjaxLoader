@@ -147,8 +147,12 @@ The loader markup
 </div>
 ```
 
-Instead of the default img tag, you can have any tag, but the convention is that the .loader_overlay element has only
-one direct children with css class loader.
+
+When you call the ajaxloader method, it creates the loader_overlay element and prepends it dynamically to the target 
+element.
+
+Instead of the default img tag, you can make ajaxloader to create any tag, using the different options (see options below),
+but the convention is that the .loader_overlay element has only one direct children with css class loader.
 
 
 
