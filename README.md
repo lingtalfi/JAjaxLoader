@@ -18,17 +18,17 @@ jAjaxLoader can be installed as a [planet](https://github.com/lingtalfi/Observer
 Summary
 ------------
 
-- How do I use it?
-- Customize the appearance
+- [How do I use it?](#how-do-i-use-it-)
+- [Customize the appearance](#customize-the-appearance)
     
-    - understanding the markup
-    - meet the built-in loaders
-    - go your own way
+    - [understanding the markup](#understanding-the-markup)
+    - [meet the built-in loaders](#meet-the-built-in-loaders)
+    - [go your own way](#go-your-own-way-tutorial)
     
-- Make the look persistent throughout the app
-- jajaxloader options
-- More info
-- History Log
+- [Make the look persistent throughout the app](#make-the-look-persistent-throughout-the-app)
+- [jajaxloader options](#jajaxloader-options)
+- [More info](#more-info)
+- [History Log](#history-log)
 
 
 
