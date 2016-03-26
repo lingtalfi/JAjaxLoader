@@ -13,12 +13,13 @@ jAjaxLoader can be installed as a [planet](https://github.com/lingtalfi/Observer
 ![ajax loader](http://s19.postimg.org/sp4xaaa5f/ajaxloader.gif)
 
 
+http://codepen.io/lingtalfi/pen/qZjRoo
 
 
 Summary
 ------------
 
-- [How do I use it?](#how-do-i-use-it-)
+- [How do I use it?](#how-do-i-use-it)
 - [Customize the appearance](#customize-the-appearance)
     
     - [understanding the markup](#understanding-the-markup)
