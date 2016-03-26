@@ -61,7 +61,7 @@ and remove it two seconds later.
     <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
 
     <script src="/libs/jajaxloader/js/jajaxloader.js"></script>
-    <link rel="stylesheet" href="/libs/jajaxloader/css/jajaxloader.css">
+    <link rel="stylesheet" href="/libs/jajaxloader/skin/jajaxloader.css">
 
 
     <title>Html page</title>
@@ -187,7 +187,7 @@ There are a few things to say about that markup:
 
 
 - the loader_overlay element's default css code is inside the 
-        [jajaxloader.css](https://github.com/lingtalfi/JAjaxLoader/blob/master/www/libs/jajaxloader/css/jajaxloader.css) css file;
+        [jajaxloader.css](https://github.com/lingtalfi/JAjaxLoader/blob/master/www/libs/jajaxloader/skin/jajaxloader.css) css file;
         it basically creates an overlay that is 100% of the host's dimensions, and is told to place any content (the .loader) at its center
         (vertically and horizontally).
 
@@ -353,7 +353,7 @@ And here is the demo source code:
 
 
 
-All demo's css files are located in the css folder: https://github.com/lingtalfi/JAjaxLoader/tree/master/www/libs/jajaxloader/css
+All demo's css files are located in the css folder: https://github.com/lingtalfi/JAjaxLoader/tree/master/www/libs/jajaxloader/skin
 
 
 So I guess that it's a good thing to know that those demos exist.
@@ -383,7 +383,7 @@ Paste the following code and run it in a browser.
     <meta charset="utf-8"/>
     <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
     <script src="/libs/jajaxloader/js/jajaxloader.js"></script>
-    <link rel="stylesheet" href="/libs/jajaxloader/css/jajaxloader.css">
+    <link rel="stylesheet" href="/libs/jajaxloader/skin/jajaxloader.css">
     
     <title>Html page</title>
     <style>
@@ -418,7 +418,7 @@ Taking the spiral example by Nicolas: http://codepen.io/Terramaster/pen/bVpxGE, 
     <meta charset="utf-8"/>
     <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
     <script src="/libs/jajaxloader/js/jajaxloader.js"></script>
-    <link rel="stylesheet" href="/libs/jajaxloader/css/jajaxloader.css">
+    <link rel="stylesheet" href="/libs/jajaxloader/skin/jajaxloader.css">
     
     <!-- This is where I put the css code for the spiral loader -->
     <link rel="stylesheet" href="/spiral.css">
@@ -574,7 +574,7 @@ The following code shows how to do it using the jajaxloader library:
     <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
     <script src="/libs/jajaxloader/js/jajaxloader.js"></script>
     <link rel="stylesheet"
-          href="/libs/jajaxloader/css/jajaxloader.css">
+          href="/libs/jajaxloader/skin/jajaxloader.css">
 
     <!-- This is where I put the css code for the spiral loader -->
     <link rel="stylesheet" href="/spiral.css">
@@ -659,7 +659,7 @@ On this final fictive page example, the loader will use the defaults settings sp
     <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
     <script src="/libs/jajaxloader/js/jajaxloader.js"></script>
     <link rel="stylesheet"
-          href="/libs/jajaxloader/css/jajaxloader.css">
+          href="/libs/jajaxloader/skin/jajaxloader.css">
 
     
     <script src="/default_app_loader.js"></script>
