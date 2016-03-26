@@ -4,7 +4,8 @@
     var pluginName = "ajaxloader";
     var cssOverlay = "loader_overlay";
     var cssLoader = "loader";
-    var defaultImg = "/libs/jajaxloader/img/ajax-loader.gif";
+    //var defaultImg = "/libs/jajaxloader/img/ajax-loader.gif";
+    var defaultImg = "https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/img/ajax-loader.gif";
 
     $[pluginName] = function (element, options) {
 
@@ -17,47 +18,47 @@
     };
 
     $[pluginName].prototype = {
+        defaults: {
+            /**
+             * @param img - string,
+             *          the loader img.
+             *          If not set, then the cssClass option is used.
+             */
+            img: '',
+            /**
+             * @param cssClass - string,
+             *          the css class to apply to the loader overlay; only if the img option is not set.
+             *          If the cssClass option is not set, the loader will eventually use
+             *          a default image.
+             */
+            cssClass: '',
+            /**
+             * @param content - string,
+             *          The content of the loader (its inner html).
+             *          This only works if the loader is not an img
+             *          (i.e., if the img option is empty, and the cssClass option is not empty).
+             */
+            content: '',
+            /**
+             * @param fadeSpeed - int,
+             *      the speed (in ms) at which the overlay fades in and out.
+             */
+            fadeSpeed: 250,
+        },
         init: function (options) {
 
-            this.o = $.extend({}, {
-                /**
-                 * @param img - string,
-                 *          the loader img.
-                 *          If not set, then the cssClass option is used.
-                 */
-                img: '',
-                /**
-                 * @param cssClass - string,
-                 *          the css class to apply to the loader overlay, if the img option is not set.
-                 *          If the cssClass option is not set, the loader will eventually use
-                 *          a default image.
-                 */
-                cssClass: '',
-                /**
-                 * @param content - string,
-                 *          The content of the loader.
-                 *          This only works if the loader is not an img 
-                 *          (i.e., if the img option is empty, and the cssClass option is not empty). 
-                 */
-                content: '',
-                /**
-                 * @param fadeSpeed - int,
-                 *      the speed (in ms) at which the overlay fades in and out.
-                 */
-                fadeSpeed: 250,
-            }, options);
+            this.o = $.extend({}, this.defaults, options);
 
 
             if (null === this.jOverlay) {
                 this.jOverlay = $('<div style="display: none" class="' + cssOverlay + '"></div>');
                 this.jEl.prepend(this.jOverlay);
             }
-            else{
+            else {
                 this.jOverlay.removeClass().addClass(cssOverlay);
             }
 
-            
-            
+
             var jLoader = null;
             if ('' !== this.o.img) {
                 jLoader = $('<img class="' + cssLoader + '" src="' + this.o.img + '"/>');

@@ -1,0 +1,98 @@
+/*--------------------------------------------------------------------------*
+// 
+  <div class="loader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+/*--------------------------------------------------------------------------*/
+
+
+.cssload_spiral .loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    animation-name: rotateAnim;
+    animation-duration: .35s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.cssload_spiral .loader div {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.cssload_spiral .loader div:nth-child(odd) {
+    border-top: none;
+    border-left: none;
+}
+.cssload_spiral .loader div:nth-child(even) {
+    border-bottom: none;
+    border-right: none;
+}
+.cssload_spiral .loader div:nth-child(2) {
+    border-width: 2px;
+    left: 0px;
+    top: -4px;
+    width: 12px;
+    height: 12px;
+}
+.cssload_spiral .loader div:nth-child(3) {
+    border-width: 2px;
+    left: -1px;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+}
+.cssload_spiral .loader div:nth-child(4) {
+    border-width: 3px;
+    left: -1px;
+    top: -4px;
+    width: 24px;
+    height: 24px;
+}
+.cssload_spiral .loader div:nth-child(5) {
+    border-width: 3px;
+    left: -1px;
+    top: 4px;
+    width: 32px;
+    height: 32px;
+}
+.cssload_spiral .loader div:nth-child(6) {
+    border-width: 4px;
+    left: 0px;
+    top: -4px;
+    width: 40px;
+    height: 40px;
+}
+.cssload_spiral .loader div:nth-child(7) {
+    border-width: 4px;
+    left: 0px;
+    top: 6px;
+    width: 50px;
+    height: 50px;
+}
+@keyframes rotateAnim {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

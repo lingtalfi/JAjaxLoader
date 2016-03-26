@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
+	<script src="/libs/jajaxloader/js/jajaxloader.js"></script>
+	<link rel="stylesheet" href="/libs/jajaxloader/css/jajaxloader.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/css/lukehaas/vertical_bars.css">
+
+	<title>Html page</title>
+	<style>
+		.red {
+			background: rgba(255, 0, 0, 0.3);
+			position: relative;
+		}
+	</style>
+</head>
+
+<body>
+
+
+<div id="target" class="red">
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
+		dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
+		necessitatibus!
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
+		dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
+		necessitatibus!
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
+		dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
+		necessitatibus!
+	</p>
+</div>
+
+<button id="click">Click me</button>
+<button id="start">Start loader</button>
+<button id="stop">Stop loader</button>
+
+
+<script>
+	$(document).ready(function () {
+
+
+		
+		$.ajaxloader.prototype.defaults.cssClass = "lukehaas_vertical_bars"; // make every default call to ajaxloader use this option
+		
+		
+
+		var jTarget = $('#target');
+
+		$('#click').on('click', function () {
+			jTarget.ajaxloader(); // (re)start the loader
+			$.post('/libs/jajaxloader/demo/service/service.php', function (content) {
+						jTarget.append(content);
+					})
+					.always(function () {
+						jTarget.ajaxloader("stop");
+					});
+		});
+
+		$('#start').on('click', function () {
+			jTarget.ajaxloader();
+		});
+
+		$('#stop').on('click', function () {
+			jTarget.ajaxloader("stop");
+		});
+
+
+	});
+</script>
+
+</body>
+</html>

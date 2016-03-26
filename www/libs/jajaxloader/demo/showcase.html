@@ -16,12 +16,19 @@
 	<link rel="stylesheet" href="/libs/jajaxloader/css/cssload/flipping_square.css">
 	<link rel="stylesheet" href="/libs/jajaxloader/css/cssload/spinning_square.css">
 	<link rel="stylesheet" href="/libs/jajaxloader/css/cssload/zenith.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/css/cssload/ventilator.css">
 
 	<title>Html page</title>
 	<style>
 		.gray {
 			background: rgba(100, 100, 100, 0.3);
 			position: relative;
+		}
+
+		section.controls {
+			margin-top: 20px;
+			padding-top: 20px;
+			border-top: 1px solid gray;
 		}
 	</style>
 </head>
@@ -58,20 +65,23 @@
 </div>
 
 
-<button id="loader1">Vulchivijay rosace</button>
-<button id="loader2">Haas vertical bars</button>
-<button id="loader3">Haas circle on path</button>
-<button id="loader4">Haas tear ball</button>
-<button id="loader5">Cssload thecube</button>
-<button id="loader6">Cssload colordots</button>
-<button id="loader7">Cssload flipping square</button>
-<button id="loader8">Cssload spinning square</button>
-<button id="loader9">Cssload zenith</button>
+<section>
+	<button id="loader1">Vulchivijay rosace</button>
+	<button id="loader2">Haas vertical bars</button>
+	<button id="loader3">Haas circle on path</button>
+	<button id="loader4">Haas tear ball</button>
+	<button id="loader5">Cssload thecube</button>
+	<button id="loader6">Cssload colordots</button>
+	<button id="loader7">Cssload flipping square</button>
+	<button id="loader8">Cssload spinning square</button>
+	<button id="loader9">Cssload zenith</button>
+	<button id="loader10">Cssload ventilator</button>
+</section>
 
-
-<button id="stop">Stop</button>
-<button id="resume">Resume</button>
-
+<section class="controls">
+	<button id="stop">Stop</button>
+	<button id="resume">Resume</button>
+</section>
 
 <script>
 	$(document).ready(function () {
@@ -101,8 +111,7 @@
 		setHandler('loader7', 'cssload_flipping_square', '<div class="cssload-flipper"><div class="cssload-front"></div><div class="cssload-back"></div></div>');
 		setHandler('loader8', 'cssload_spinning_square');
 		setHandler('loader9', 'cssload_zenith', '<div class="cssload-zenith"></div>');
-
-
+		setHandler('loader10', 'cssload_ventilator', '<div class="cssload-ventilator"></div>');
 
 
 		$('#resume').on('click', function () {
