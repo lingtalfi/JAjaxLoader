@@ -74,7 +74,6 @@
             }
 
             this.jOverlay.empty().append(jLoader);
-            this.jOverlay.fadeIn(this.o.fadeSpeed);
         },
         stop: function () {
             this.jOverlay.fadeOut(this.o.fadeSpeed);
@@ -93,21 +92,23 @@
                 plugin = new $[pluginName](this, options);
                 $(this).data(pluginName, plugin);
             }
+
+
+            if ('stop' === options) {
+                plugin = $(this).data(pluginName);
+                plugin.stop();
+            }
             else {
-                if ('stop' === options) {
-                    plugin = $(this).data(pluginName);
-                    plugin.stop();
+                plugin = $(this).data(pluginName);
+                if ('undefined' !== typeof options) {
+                    plugin.init(options);
+                    plugin.restart();
                 }
                 else {
-                    plugin = $(this).data(pluginName);
-                    if ('undefined' !== typeof options) {
-                        plugin.init(options);
-                    }
-                    else {
-                        plugin.restart();
-                    }
+                    plugin.restart();
                 }
             }
+
         });
     };
 

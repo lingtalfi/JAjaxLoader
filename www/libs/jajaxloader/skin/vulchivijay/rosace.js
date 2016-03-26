@@ -1,0 +1,2 @@
+$.ajaxloader.prototype.defaults.cssClass = 'vulchivijay_rosace';
+$.ajaxloader.prototype.defaults.content = '<div class="spinnerBlock"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>';

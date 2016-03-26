@@ -47,7 +47,7 @@ $('#target').ajaxloader("stop"); // stop the loader
 ```
 
 
-Perhaps the simple example is the following, which injects an ajaxloader in the body,
+Perhaps the simplest example is the following, which injects an ajaxloader in the body,
 and remove it two seconds later.
 
 
@@ -61,6 +61,7 @@ and remove it two seconds later.
     <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
 
     <script src="/libs/jajaxloader/js/jajaxloader.js"></script>
+    <link rel="stylesheet" href="/libs/jajaxloader/css/jajaxloader.css">
 
 
     <title>Html page</title>
@@ -91,12 +92,61 @@ and remove it two seconds later.
 http://codepen.io/lingtalfi/pen/dMRNze
 
 
-
 Since we didn't specify any particular look, jajaxloader use the default image, which is an ugly-as-possible default gif.
 
-Chances are that you won't use that default image in a production environment.
 
-So, you want to customize the appearance of the loader, and luckily that's what we will discuss in the next section.
+Using built-in skins is one way to enhance the look of the loader.
+
+The following example uses the vulchivijay rosace css loader.
+
+
+
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+
+    <script src="/libs/jajaxloader/js/jajaxloader.js"></script>
+
+
+    <!-- using a skin -->
+    <script src="/libs/jajaxloader/skin/vulchivijay/rosace.js"></script>
+    <link rel="stylesheet" href="/libs/jajaxloader/skin/vulchivijay/rosace.css">
+    <title>Html page</title>
+
+    <style>
+        body {
+            background: #333;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            $(document.body).ajaxloader();
+        });
+    })(jQuery);
+</script>
+
+</body>
+</html>
+```
+
+
+http://codepen.io/lingtalfi/pen/jqwwYb
+
+
+The built-in skins are in the skin directory of this repository.
+To use a skin, as you may have noticed from the above example, simply add its css file and its corresponding js file
+in your html head.
 
 
 
@@ -154,7 +204,7 @@ Let's have a look at how this internal markup can be used to create more awesome
 
 
 Before you could read those lines, I've created some loaders, either for my own needs or to use as examples for this demo.
-The following demo showcases my work so far.
+The following demo showcases some of the loaders (not all of them) that are in the skin directory.
  
 If you want to push your work here, pull requests are welcome.
 
@@ -172,129 +222,129 @@ And here is the demo source code:
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
-    <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+	<meta charset="utf-8"/>
+	<script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
 
 
-    <script src="/libs/jajaxloader/js/jajaxloader.js"></script>
-    <link rel="stylesheet" href="/libs/jajaxloader/css/jajaxloader.css">
-    <link rel="stylesheet" href="/libs/jajaxloader/css/lukehaas/vertical_bars.css">
-    <link rel="stylesheet" href="/libs/jajaxloader/css/lukehaas/circle_on_path.css">
-    <link rel="stylesheet" href="/libs/jajaxloader/css/lukehaas/tear_ball.css">
-    <link rel="stylesheet" href="/libs/jajaxloader/css/vulchivijay/rosace.css">
-    <link rel="stylesheet" href="/libs/jajaxloader/css/cssload/thecube.css">
-    <link rel="stylesheet" href="/libs/jajaxloader/css/cssload/colordots.css">
-    <link rel="stylesheet" href="/libs/jajaxloader/css/cssload/flipping_square.css">
-    <link rel="stylesheet" href="/libs/jajaxloader/css/cssload/spinning_square.css">
-    <link rel="stylesheet" href="/libs/jajaxloader/css/cssload/zenith.css">
-    <link rel="stylesheet" href="/libs/jajaxloader/css/cssload/ventilator.css">
+	<script src="/libs/jajaxloader/js/jajaxloader.js"></script>
+	<link rel="stylesheet" href="/libs/jajaxloader/skin/jajaxloader.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/skin/lukehaas/vertical_bars.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/skin/lukehaas/circle_on_path.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/skin/lukehaas/tear_ball.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/skin/vulchivijay/rosace.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/skin/cssload/thecube.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/skin/cssload/colordots.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/skin/cssload/flipping_square.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/skin/cssload/spinning_square.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/skin/cssload/zenith.css">
+	<link rel="stylesheet" href="/libs/jajaxloader/skin/cssload/ventilator.css">
 
-    <title>Html page</title>
-    <style>
-        .gray {
-            background: rgba(100, 100, 100, 0.3);
-            position: relative;
-        }
+	<title>Html page</title>
+	<style>
+		.gray {
+			background: rgba(100, 100, 100, 0.3);
+			position: relative;
+		}
 
-        section.controls {
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid gray;
-        }
-    </style>
+		section.controls {
+			margin-top: 20px;
+			padding-top: 20px;
+			border-top: 1px solid gray;
+		}
+	</style>
 </head>
 
 <body>
 
 
 <div id="target" class="gray">
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
-        dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
-        necessitatibus!
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
-        dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
-        necessitatibus!
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
-        dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
-        necessitatibus!
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
-        dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
-        necessitatibus!
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
-        dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
-        necessitatibus!
-    </p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
+		dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
+		necessitatibus!
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
+		dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
+		necessitatibus!
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
+		dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
+		necessitatibus!
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
+		dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
+		necessitatibus!
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias atque cupiditate dicta,
+		dignissimos enim esse et iure molestias nihil nisi perferendis repellat repellendus tempora unde voluptas. At,
+		necessitatibus!
+	</p>
 </div>
 
 
 <section>
-    <button id="loader1">Vulchivijay rosace</button>
-    <button id="loader2">Haas vertical bars</button>
-    <button id="loader3">Haas circle on path</button>
-    <button id="loader4">Haas tear ball</button>
-    <button id="loader5">Cssload thecube</button>
-    <button id="loader6">Cssload colordots</button>
-    <button id="loader7">Cssload flipping square</button>
-    <button id="loader8">Cssload spinning square</button>
-    <button id="loader9">Cssload zenith</button>
-    <button id="loader10">Cssload ventilator</button>
+	<button id="loader1">Vulchivijay rosace</button>
+	<button id="loader2">Haas vertical bars</button>
+	<button id="loader3">Haas circle on path</button>
+	<button id="loader4">Haas tear ball</button>
+	<button id="loader5">Cssload thecube</button>
+	<button id="loader6">Cssload colordots</button>
+	<button id="loader7">Cssload flipping square</button>
+	<button id="loader8">Cssload spinning square</button>
+	<button id="loader9">Cssload zenith</button>
+	<button id="loader10">Cssload ventilator</button>
 </section>
 
 <section class="controls">
-    <button id="stop">Stop</button>
-    <button id="resume">Resume</button>
+	<button id="stop">Stop</button>
+	<button id="resume">Resume</button>
 </section>
 
 <script>
-    $(document).ready(function () {
+	$(document).ready(function () {
 
 
-        var jTarget = $('#target');
+		var jTarget = $('#target');
 
 
-        function setHandler(id, cssClass, content) {
-            if ('undefined' === typeof content) {
-                content = '';
-            }
-            $('#' + id).on('click', function () {
-                jTarget.ajaxloader({
-                    cssClass: cssClass,
-                    content: content,
-                });
-            });
-        }
+		function setHandler(id, cssClass, content) {
+			if ('undefined' === typeof content) {
+				content = '';
+			}
+			$('#' + id).on('click', function () {
+				jTarget.ajaxloader({
+					cssClass: cssClass,
+					content: content,
+				});
+			});
+		}
 
-        setHandler('loader1', 'vulchivijay_rosace', '<div class="spinnerBlock"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>');
-        setHandler('loader2', 'lukehaas_vertical_bars');
-        setHandler('loader3', 'lukehaas_circle_on_path');
-        setHandler('loader4', 'lukehaas_tear_ball');
-        setHandler('loader5', 'cssload_thecube', '<div class="cssload-cube cssload-c1"></div><div class="cssload-cube cssload-c2"></div><div class="cssload-cube cssload-c4"></div><div class="cssload-cube cssload-c3"></div>');
-        setHandler('loader6', 'cssload_colordots', '<div class="cssload-dots" style="filter: url(#goo);"><div class="cssload-dot"></div><div class="cssload-dot"></div><div class="cssload-dot"></div><div class="cssload-dot"></div><div class="cssload-dot"></div></div><svg version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><filter id="goo"><feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix><!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>--></filter></defs></svg>');
-        setHandler('loader7', 'cssload_flipping_square', '<div class="cssload-flipper"><div class="cssload-front"></div><div class="cssload-back"></div></div>');
-        setHandler('loader8', 'cssload_spinning_square');
-        setHandler('loader9', 'cssload_zenith', '<div class="cssload-zenith"></div>');
-        setHandler('loader10', 'cssload_ventilator', '<div class="cssload-ventilator"></div>');
-
-
-        $('#resume').on('click', function () {
-            jTarget.ajaxloader();
-        });
-
-        $('#stop').on('click', function () {
-            jTarget.ajaxloader("stop");
-        });
+		setHandler('loader1', 'vulchivijay_rosace', '<div class="spinnerBlock"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>');
+		setHandler('loader2', 'lukehaas_vertical_bars');
+		setHandler('loader3', 'lukehaas_circle_on_path');
+		setHandler('loader4', 'lukehaas_tear_ball');
+		setHandler('loader5', 'cssload_thecube', '<div class="cssload-cube cssload-c1"></div><div class="cssload-cube cssload-c2"></div><div class="cssload-cube cssload-c4"></div><div class="cssload-cube cssload-c3"></div>');
+		setHandler('loader6', 'cssload_colordots', '<div class="cssload-dots" style="filter: url(#goo);"><div class="cssload-dot"></div><div class="cssload-dot"></div><div class="cssload-dot"></div><div class="cssload-dot"></div><div class="cssload-dot"></div></div><svg version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><filter id="goo"><feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix><!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>--></filter></defs></svg>');
+		setHandler('loader7', 'cssload_flipping_square', '<div class="cssload-flipper"><div class="cssload-front"></div><div class="cssload-back"></div></div>');
+		setHandler('loader8', 'cssload_spinning_square');
+		setHandler('loader9', 'cssload_zenith', '<div class="cssload-zenith"></div>');
+		setHandler('loader10', 'cssload_ventilator', '<div class="cssload-ventilator"></div>');
 
 
-    });
+		$('#resume').on('click', function () {
+			jTarget.ajaxloader();
+		});
+
+		$('#stop').on('click', function () {
+			jTarget.ajaxloader("stop");
+		});
+
+
+	});
 </script>
 
 </body>
@@ -695,11 +745,27 @@ See the [demo directory](https://github.com/lingtalfi/JAjaxLoader/blob/master/ww
 
 
 
+Credits
+------------
+
+Demos come from the internet:
+
+- http://projects.lukehaas.me/css-loaders/
+- http://cssload.net/
+- http://codepen.io/vulchivijay/pen/gPxrvb
+
 
 
 
 History Log
 ------------------
+    
+- 1.3.0 -- 2016-03-26
+
+
+    - fixed restart/init/stop confusion bug
+    - reorganized skins
+
     
 - 1.2.0 -- 2016-03-26
 

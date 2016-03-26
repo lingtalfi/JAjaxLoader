@@ -1,0 +1,2 @@
+$.ajaxloader.prototype.defaults.cssClass = 'cssload_flipping_square';
+$.ajaxloader.prototype.defaults.content = '<div class="cssload-flipper"><div class="cssload-front"></div><div class="cssload-back"></div></div>';
