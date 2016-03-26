@@ -60,7 +60,7 @@ and remove it two seconds later.
     <meta charset="utf-8"/>
     <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
 
-    <script src="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/js/jajaxloader.js"></script>
+    <script src="/libs/jajaxloader/js/jajaxloader.js"></script>
 
 
     <title>Html page</title>
@@ -176,18 +176,18 @@ And here is the demo source code:
     <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
 
 
-    <script src="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/js/jajaxloader.js"></script>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/css/jajaxloader.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/css/lukehaas/vertical_bars.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/css/lukehaas/circle_on_path.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/css/lukehaas/tear_ball.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/css/vulchivijay/rosace.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/css/cssload/thecube.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/css/cssload/colordots.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/css/cssload/flipping_square.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/css/cssload/spinning_square.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/css/cssload/zenith.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/css/cssload/ventilator.css">
+    <script src="/libs/jajaxloader/js/jajaxloader.js"></script>
+    <link rel="stylesheet" href="/libs/jajaxloader/css/jajaxloader.css">
+    <link rel="stylesheet" href="/libs/jajaxloader/css/lukehaas/vertical_bars.css">
+    <link rel="stylesheet" href="/libs/jajaxloader/css/lukehaas/circle_on_path.css">
+    <link rel="stylesheet" href="/libs/jajaxloader/css/lukehaas/tear_ball.css">
+    <link rel="stylesheet" href="/libs/jajaxloader/css/vulchivijay/rosace.css">
+    <link rel="stylesheet" href="/libs/jajaxloader/css/cssload/thecube.css">
+    <link rel="stylesheet" href="/libs/jajaxloader/css/cssload/colordots.css">
+    <link rel="stylesheet" href="/libs/jajaxloader/css/cssload/flipping_square.css">
+    <link rel="stylesheet" href="/libs/jajaxloader/css/cssload/spinning_square.css">
+    <link rel="stylesheet" href="/libs/jajaxloader/css/cssload/zenith.css">
+    <link rel="stylesheet" href="/libs/jajaxloader/css/cssload/ventilator.css">
 
     <title>Html page</title>
     <style>
@@ -332,8 +332,8 @@ Paste the following code and run it in a browser.
 <head>
     <meta charset="utf-8"/>
     <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
-    <script src="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/js/jajaxloader.js"></script>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/css/jajaxloader.css">
+    <script src="/libs/jajaxloader/js/jajaxloader.js"></script>
+    <link rel="stylesheet" href="/libs/jajaxloader/css/jajaxloader.css">
     
     <title>Html page</title>
     <style>
@@ -367,8 +367,8 @@ Taking the spiral example by Nicolas: http://codepen.io/Terramaster/pen/bVpxGE, 
 <head>
     <meta charset="utf-8"/>
     <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
-    <script src="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/js/jajaxloader.js"></script>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/css/jajaxloader.css">
+    <script src="/libs/jajaxloader/js/jajaxloader.js"></script>
+    <link rel="stylesheet" href="/libs/jajaxloader/css/jajaxloader.css">
     
     <!-- This is where I put the css code for the spiral loader -->
     <link rel="stylesheet" href="/spiral.css">
@@ -522,9 +522,9 @@ The following code shows how to do it using the jajaxloader library:
 <head>
     <meta charset="utf-8"/>
     <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
-    <script src="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/js/jajaxloader.js"></script>
+    <script src="/libs/jajaxloader/js/jajaxloader.js"></script>
     <link rel="stylesheet"
-          href="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/css/jajaxloader.css">
+          href="/libs/jajaxloader/css/jajaxloader.css">
 
     <!-- This is where I put the css code for the spiral loader -->
     <link rel="stylesheet" href="/spiral.css">
@@ -607,9 +607,9 @@ On this final fictive page example, the loader will use the defaults settings sp
 <head>
     <meta charset="utf-8"/>
     <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
-    <script src="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/js/jajaxloader.js"></script>
+    <script src="/libs/jajaxloader/js/jajaxloader.js"></script>
     <link rel="stylesheet"
-          href="https://cdn.rawgit.com/lingtalfi/JAjaxLoader/master/www/libs/jajaxloader/css/jajaxloader.css">
+          href="/libs/jajaxloader/css/jajaxloader.css">
 
     
     <script src="/default_app_loader.js"></script>
