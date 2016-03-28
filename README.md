@@ -760,6 +760,10 @@ Demos come from the internet:
 History Log
 ------------------
     
+- 1.4.0 -- 2016-03-28
+
+    - add jajaxloader-body.css as an alternative to jajaxloader.css (for loaders that we append to the body of the document)
+
 - 1.3.0 -- 2016-03-26
 
 
