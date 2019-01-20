@@ -1,4 +1,4 @@
-jAjaxLoader
+JAjaxLoader
 ====================
 2016-03-03
 
@@ -6,11 +6,21 @@ jAjaxLoader
 A jquery plugin to start/stop an ajax loader.
 
 
-jAjaxLoader can be installed as a [planet](https://github.com/lingtalfi/Observer/blob/master/article/article.planetReference.eng.md).
-
-
 
 ![ajax loader](http://s19.postimg.org/sp4xaaa5f/ajaxloader.gif)
+
+
+jAjaxLoader is part of the [universe framework](https://github.com/karayabin/universe-snapshot).
+
+
+Install
+=============
+
+
+Using the [uni tool](https://github.com/lingtalfi/universe-naive-importer)
+```bash
+uni import JAjaxLoader
+```
 
 
 http://codepen.io/lingtalfi/pen/qZjRoo
