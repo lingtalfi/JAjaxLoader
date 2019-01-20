@@ -7,7 +7,7 @@ A jquery plugin to start/stop an ajax loader.
 
 
 
-![ajax loader](http://s19.postimg.org/sp4xaaa5f/ajaxloader.gif)
+![ajax loader](http://lingtalfi.com/img/universe/JAjaxLoader/ajaxloader.gif)
 
 
 jAjaxLoader is part of the [universe framework](https://github.com/karayabin/universe-snapshot).
