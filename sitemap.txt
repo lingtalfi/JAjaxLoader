@@ -1,0 +1,3 @@
+https://github.com/lingtalfi/JAjaxLoader/blob/master/README.md
+https://github.com/lingtalfi/JAjaxLoader/blob/master/doc/problems/v0.0.0.tired_of_recreating_loaders.md
+https://github.com/lingtalfi/JAjaxLoader/blob/master/doc/problems/v0.0.1.what_about_complex_loaders.md

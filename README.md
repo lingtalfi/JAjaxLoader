@@ -769,7 +769,11 @@ Demos come from the internet:
 
 History Log
 ------------------
-    
+
+- 1.4.1 -- 2020-12-04
+
+    - Add lpi-deps.byml file
+
 - 1.4.0 -- 2016-03-28
 
     - add jajaxloader-body.css as an alternative to jajaxloader.css (for loaders that we append to the body of the document)
