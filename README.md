@@ -1,6 +1,6 @@
 JAjaxLoader
 ====================
-2016-03-03
+2016-03-03 -> 2021-03-05
 
 
 A jquery plugin to start/stop an ajax loader.
@@ -16,6 +16,11 @@ jAjaxLoader is part of the [universe framework](https://github.com/karayabin/uni
 Install
 =============
 
+
+Using the [planet installer](https://github.com/lingtalfi/Light_PlanetInstaller) via [light-cli](https://github.com/lingtalfi/Light_Cli)
+```bash
+lt install Ling.JAjaxLoader
+```
 
 Using the [uni tool](https://github.com/lingtalfi/universe-naive-importer)
 ```bash
@@ -769,6 +774,10 @@ Demos come from the internet:
 
 History Log
 ------------------
+
+- 1.4.3 -- 2021-03-05
+
+    - update README.md, add install alternative
 
 - 1.4.2 -- 2020-12-08
 
